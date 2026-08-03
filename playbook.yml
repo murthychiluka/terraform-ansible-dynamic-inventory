@@ -1,0 +1,27 @@
+---
+- name: Install and start nginx on all webservers
+  hosts: tag_webserver
+  become: true
+  gather_facts: true
+
+  tasks:
+    - name: Install nginx
+      dnf:
+        name: nginx
+        state: present
+
+    - name: Start and enable nginx
+      systemd:
+        name: nginx
+        state: started
+        enabled: yes
+
+    - name: Deploy a simple test page
+      copy:
+        content: "Hello from murthy {{ inventory_hostname }}"
+        dest: /usr/share/nginx/html/index.html
+
+    - name: Ensure nginx is running
+      uri:
+        url: "http://localhost"
+        status_code: 200

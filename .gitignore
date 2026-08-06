@@ -1,0 +1,32 @@
+# Local .terraform directories
+**/.terraform/*
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+*.terraform.tfstate
+*.auto.tfvars
+
+# Terraform lock file
+.terraform.lock.hcl
+# documents
+*.docls
+# secrets.auto.tfvars   (add this filename to .gitignore!)
+  secrets.auto.tfvars
+  terraform.tfvars
+  .env
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# Variables
+*.tfvars
+*.tfvars.json
+
+# Crash logs
+crash.log
+.terragrunt-cache/

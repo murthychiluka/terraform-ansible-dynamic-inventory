@@ -113,6 +113,9 @@ keyed_groups:
 
     Ansible creates a group:
 
+    ---bash
+    ansible-inventory -i aws_ec2.yml --graph
+
 tag_webserver
 
 containing EC2-1 and EC2-2.

@@ -113,7 +113,11 @@ keyed_groups:
 
     Ansible creates a group:
 
-    ---bash
+    Verify Dynamic Inventory
+
+List the discovered EC2 instances:
+
+    ``` bash
     ansible-inventory -i aws_ec2.yml --graph
 
 tag_webserver

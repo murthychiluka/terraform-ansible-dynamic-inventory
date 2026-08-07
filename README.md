@@ -117,9 +117,9 @@ keyed_groups:
 
 List the discovered EC2 instances:
 
-    ```bash
-    ansible-inventory -i aws_ec2.yml --graph
-    ```
+   ```bash
+ansible-inventory -i aws_ec2.yml --graph
+```
 
 tag_webserver
 

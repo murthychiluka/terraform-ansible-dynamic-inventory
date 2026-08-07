@@ -3,7 +3,6 @@ Install the following on the Ansible controller:
 ansible-galaxy collection install amazon.aws
 pip install boto3 botocore
 
-- - -
 
 # Terraform + Ansible Dynamic Inventory
 

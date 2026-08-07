@@ -1,8 +1,9 @@
-- - -
-Install the following on the Ansible controller:
+## Install Dependencies on the Ansible Controller
 
+Run the following commands on the Ansible controller:
+
+```bash
 ansible-galaxy collection install amazon.aws
-
 pip install boto3 botocore
 
 
